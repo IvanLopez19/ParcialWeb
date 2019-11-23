@@ -1,3 +1,9 @@
+require('dotenv').config();
 const app= require('./app');
+require('./database');
 
-app.listen(4200, console.log('servidor conectado'));
+async function main(){
+    await app.listen(app.get('port'), console.log('servidor conectado'));
+}
+
+main();
