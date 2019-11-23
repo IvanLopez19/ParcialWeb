@@ -3,7 +3,7 @@ const frutasschema= new Schema({
     nombre: String,
     peso: String,
     color: String,
-    arboles: Boolean,
+    arboles: String,
     calorias: String,
 },{timestamps:true});
 
